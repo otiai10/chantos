@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://your.server.com/" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4E-ot-zSu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://your.server.com/" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4E-ot-zSu">
                                 <rect key="frame" x="179" y="233" width="242" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMJ-Pt-gKV">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMJ-Pt-gKV">
                                 <rect key="frame" x="235" y="300" width="130" height="30"/>
                                 <state key="normal" title="ENTER">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,6 +32,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="XMJ-Pt-gKV" secondAttribute="centerX" id="URH-KZ-eNo"/>
+                            <constraint firstAttribute="centerX" secondItem="d4E-ot-zSu" secondAttribute="centerX" id="VIm-Vh-HAG"/>
+                            <constraint firstAttribute="centerX" secondItem="d4E-ot-zSu" secondAttribute="centerX" id="hnt-BF-tiY"/>
+                            <constraint firstAttribute="centerX" secondItem="d4E-ot-zSu" secondAttribute="centerX" id="rx9-xU-GmO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fH-CX-I3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,12 +56,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egA-K0-Pxo">
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egA-K0-Pxo">
                                 <rect key="frame" x="0.0" y="-10" width="600" height="610"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="egA-K0-Pxo" secondAttribute="centerX" id="f9s-fc-hbG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mainChatWebView" destination="egA-K0-Pxo" id="BSR-bm-xaF"/>
