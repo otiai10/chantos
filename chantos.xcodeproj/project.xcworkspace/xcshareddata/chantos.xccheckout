@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0D4E1DC4-3ED1-4725-B4A6-153C24F0F16F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>chantos</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>59D385DAB3188A67A40F5A7A47970AB1DDB9278A</key>
+		<string>github.com:otiai10/chantos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>chantos.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>59D385DAB3188A67A40F5A7A47970AB1DDB9278A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:otiai10/chantos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>59D385DAB3188A67A40F5A7A47970AB1DDB9278A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59D385DAB3188A67A40F5A7A47970AB1DDB9278A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>chantos</string>
+		</dict>
+	</array>
+</dict>
+</plist>
