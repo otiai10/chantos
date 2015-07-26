@@ -14,6 +14,7 @@
 		7CB6F8E41B650D6700059589 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB6F8E31B650D6700059589 /* Images.xcassets */; };
 		7CB6F8E71B650D6700059589 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB6F8E51B650D6700059589 /* LaunchScreen.xib */; };
 		7CB6F8F31B650D6700059589 /* chantosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6F8F21B650D6700059589 /* chantosTests.swift */; };
+		7CC525231B65130800E22FED /* MainChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC525221B65130800E22FED /* MainChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		7CB6F8EC1B650D6700059589 /* chantosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chantosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB6F8F11B650D6700059589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB6F8F21B650D6700059589 /* chantosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chantosTests.swift; sourceTree = "<group>"; };
+		7CC525221B65130800E22FED /* MainChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				7CB6F8D91B650D6700059589 /* AppDelegate.swift */,
 				7CB6F8DE1B650D6700059589 /* ViewController.swift */,
 				7CB6F8E01B650D6700059589 /* Main.storyboard */,
+				7CC525221B65130800E22FED /* MainChatViewController.swift */,
 				7CB6F8E31B650D6700059589 /* Images.xcassets */,
 				7CB6F8E51B650D6700059589 /* LaunchScreen.xib */,
 				7CB6F8DB1B650D6700059589 /* chantos.xcdatamodeld */,
@@ -218,6 +221,7 @@
 				7CB6F8DF1B650D6700059589 /* ViewController.swift in Sources */,
 				7CB6F8DD1B650D6700059589 /* chantos.xcdatamodeld in Sources */,
 				7CB6F8DA1B650D6700059589 /* AppDelegate.swift in Sources */,
+				7CC525231B65130800E22FED /* MainChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +417,7 @@
 				7CB6F8F81B650D6700059589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CB6F8F91B650D6700059589 /* Build configuration list for PBXNativeTarget "chantosTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				7CB6F8FB1B650D6700059589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
