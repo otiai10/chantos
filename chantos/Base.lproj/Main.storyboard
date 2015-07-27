@@ -56,14 +56,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egA-K0-Pxo">
+                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egA-K0-Pxo">
                                 <rect key="frame" x="0.0" y="-10" width="600" height="610"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="egA-K0-Pxo" firstAttribute="leading" secondItem="bvz-5B-rgb" secondAttribute="leading" id="0Ud-dY-Jyx"/>
+                            <constraint firstItem="aSU-XQ-3IY" firstAttribute="top" secondItem="egA-K0-Pxo" secondAttribute="bottom" id="7Mg-Ca-Gz8"/>
                             <constraint firstAttribute="centerX" secondItem="egA-K0-Pxo" secondAttribute="centerX" id="f9s-fc-hbG"/>
+                            <constraint firstAttribute="trailing" secondItem="egA-K0-Pxo" secondAttribute="trailing" id="hNR-ol-rLI"/>
+                            <constraint firstItem="egA-K0-Pxo" firstAttribute="top" secondItem="bvz-5B-rgb" secondAttribute="top" id="vlv-xz-oR7"/>
                         </constraints>
                     </view>
                     <connections>
