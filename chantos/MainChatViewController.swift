@@ -8,11 +8,14 @@
 
 import UIKit
 
-class MainChatViewController: UIViewController {
+class MainChatViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var mainChatWebView: UIWebView!
+    @IBOutlet weak var exitBtn: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.mainChatWebView.delegate = self;
 
         // Do any additional setup after loading the view.
         let url = NSURL(string: "http://chant:guess@chant.otiai10.com")
@@ -25,6 +28,17 @@ class MainChatViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func webViewDidFinishLoad(webView: UIWebView) {
+        NSLog(self.mainChatWebView.stringByEvaluatingJavaScriptFromString("location.pathname")!)
+    }
+
+    @IBAction func TouchExitBtn(sender: AnyObject) {
+        let url = NSURL(string: "http://chant:guess@chant.otiai10.com/logout")
+        let req = NSURLRequest(URL: url!)
+        self.mainChatWebView.loadRequest(req)
+
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
