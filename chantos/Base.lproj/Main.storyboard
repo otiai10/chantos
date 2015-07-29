@@ -16,13 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://your.server.com/" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4E-ot-zSu">
-                                <rect key="frame" x="179" y="233" width="242" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://your.server.com/" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4E-ot-zSu">
+                                <rect key="frame" x="179" y="130" width="242" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="nTi-tg-EGu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMJ-Pt-gKV">
-                                <rect key="frame" x="235" y="300" width="130" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMJ-Pt-gKV">
+                                <rect key="frame" x="235" y="222" width="130" height="30"/>
                                 <state key="normal" title="ENTER">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -33,11 +36,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="d4E-ot-zSu" secondAttribute="centerX" id="4TS-Nq-d31"/>
+                            <constraint firstItem="XMJ-Pt-gKV" firstAttribute="top" secondItem="d4E-ot-zSu" secondAttribute="bottom" constant="62" id="Eei-rw-hrF"/>
+                            <constraint firstAttribute="centerX" secondItem="XMJ-Pt-gKV" secondAttribute="centerX" id="Mcr-Eb-aLz"/>
                             <constraint firstAttribute="centerX" secondItem="XMJ-Pt-gKV" secondAttribute="centerX" id="URH-KZ-eNo"/>
                             <constraint firstAttribute="centerX" secondItem="d4E-ot-zSu" secondAttribute="centerX" id="VIm-Vh-HAG"/>
                             <constraint firstAttribute="centerX" secondItem="d4E-ot-zSu" secondAttribute="centerX" id="hnt-BF-tiY"/>
                             <constraint firstAttribute="centerX" secondItem="d4E-ot-zSu" secondAttribute="centerX" id="rx9-xU-GmO"/>
+                            <constraint firstItem="d4E-ot-zSu" firstAttribute="top" secondItem="w4c-b1-OBU" secondAttribute="bottom" constant="110" id="y0Z-Ax-nfb"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VIm-Vh-HAG"/>
+                                <exclude reference="hnt-BF-tiY"/>
+                                <exclude reference="rx9-xU-GmO"/>
+                                <exclude reference="URH-KZ-eNo"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fH-CX-I3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
