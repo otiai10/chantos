@@ -12,13 +12,16 @@ class MainChatViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var mainChatWebView: UIWebView!
     @IBOutlet weak var exitBtn: UIBarButtonItem!
+    
+    var serverURL: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.mainChatWebView.delegate = self;
 
         // Do any additional setup after loading the view.
-        let url = NSURL(string: "http://chant:guess@chant.otiai10.com")
+        let url = NSURL(string: self.serverURL)
         let req = NSURLRequest(URL: url!)
         self.mainChatWebView.loadRequest(req)
     }
@@ -33,7 +36,7 @@ class MainChatViewController: UIViewController, UIWebViewDelegate {
     }
 
     @IBAction func TouchExitBtn(sender: AnyObject) {
-        let url = NSURL(string: "http://chant:guess@chant.otiai10.com/logout")
+        let url = NSURL(string: self.serverURL + "/logout")
         let req = NSURLRequest(URL: url!)
         self.mainChatWebView.loadRequest(req)
 

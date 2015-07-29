@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Entrance View Controller-->
         <scene sceneID="lLU-bJ-WLm">
             <objects>
-                <viewController id="6Gr-rt-PZ5" sceneMemberID="viewController">
+                <viewController id="6Gr-rt-PZ5" customClass="EntranceViewController" customModule="chantos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w4c-b1-OBU"/>
                         <viewControllerLayoutGuide type="bottom" id="Ahe-IR-hgT"/>
@@ -55,6 +55,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="serverURLInput" destination="d4E-ot-zSu" id="W5j-5h-N8x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fH-CX-I3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
