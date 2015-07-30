@@ -83,7 +83,7 @@
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
                                     <navigationItem id="Anx-aV-BSL">
-                                        <barButtonItem key="leftBarButtonItem" title="exit" id="z8J-mD-K9s">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="z8J-mD-K9s">
                                             <connections>
                                                 <action selector="TouchExitBtn:" destination="Lz3-QZ-ZLa" id="DNK-AZ-Sum"/>
                                             </connections>
@@ -119,6 +119,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="configsBtn" destination="DXd-F8-6ok" id="L8Z-na-Q1b"/>
                         <outlet property="exitBtn" destination="z8J-mD-K9s" id="BsM-WU-1Gd"/>
                         <outlet property="mainChatWebView" destination="egA-K0-Pxo" id="BSR-bm-xaF"/>
                     </connections>
@@ -142,8 +143,8 @@
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-b1-2es">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="configs" id="RNz-jN-zvS">
-                                        <barButtonItem key="leftBarButtonItem" title="back" id="06V-tm-QOi">
+                                    <navigationItem id="RNz-jN-zvS">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="06V-tm-QOi">
                                             <connections>
                                                 <action selector="TouchBackBtn:" destination="xvl-8b-xcH" id="whH-ph-n8q"/>
                                             </connections>
