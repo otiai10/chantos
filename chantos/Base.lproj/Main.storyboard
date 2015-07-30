@@ -88,6 +88,11 @@
                                                 <action selector="TouchExitBtn:" destination="Lz3-QZ-ZLa" id="DNK-AZ-Sum"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="configs" id="DXd-F8-6ok">
+                                            <connections>
+                                                <segue destination="xvl-8b-xcH" kind="show" id="rIF-kg-S3j"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -95,11 +100,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="egA-K0-Pxo" firstAttribute="leading" secondItem="bvz-5B-rgb" secondAttribute="leading" id="0Ud-dY-Jyx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ENg-FY-vIa" secondAttribute="trailing" id="21V-Jm-a62"/>
                             <constraint firstItem="aSU-XQ-3IY" firstAttribute="top" secondItem="ENg-FY-vIa" secondAttribute="bottom" id="4Gv-gT-rgQ"/>
                             <constraint firstItem="aSU-XQ-3IY" firstAttribute="top" secondItem="egA-K0-Pxo" secondAttribute="bottom" constant="44" id="7Mg-Ca-Gz8"/>
+                            <constraint firstItem="ENg-FY-vIa" firstAttribute="leading" secondItem="bvz-5B-rgb" secondAttribute="leadingMargin" id="BRa-FC-aeB"/>
                             <constraint firstAttribute="centerX" secondItem="ENg-FY-vIa" secondAttribute="centerX" id="Cqs-iD-9II"/>
                             <constraint firstItem="ENg-FY-vIa" firstAttribute="leading" secondItem="bvz-5B-rgb" secondAttribute="leadingMargin" id="OWR-8j-yCV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ENg-FY-vIa" secondAttribute="trailing" id="XKe-ga-Ki5"/>
                             <constraint firstAttribute="centerX" secondItem="egA-K0-Pxo" secondAttribute="centerX" id="f9s-fc-hbG"/>
                             <constraint firstAttribute="trailing" secondItem="egA-K0-Pxo" secondAttribute="trailing" id="hNR-ol-rLI"/>
                             <constraint firstItem="egA-K0-Pxo" firstAttribute="top" secondItem="bvz-5B-rgb" secondAttribute="top" constant="20" id="vlv-xz-oR7"/>
@@ -107,6 +113,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="f9s-fc-hbG"/>
+                                <exclude reference="BRa-FC-aeB"/>
                                 <exclude reference="Cqs-iD-9II"/>
                             </mask>
                         </variation>
@@ -119,6 +126,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZe-hG-sgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="683" y="399"/>
+        </scene>
+        <!--Configs View Controller-->
+        <scene sceneID="H5g-6h-WPB">
+            <objects>
+                <viewController id="xvl-8b-xcH" customClass="ConfigsViewController" customModule="chantos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ez2-Tk-1Uz"/>
+                        <viewControllerLayoutGuide type="bottom" id="tAd-Xy-aMJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5gI-oS-e0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-b1-2es">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="configs" id="RNz-jN-zvS">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="06V-tm-QOi">
+                                            <connections>
+                                                <action selector="TouchBackBtn:" destination="xvl-8b-xcH" id="whH-ph-n8q"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORq-zA-6Mx">
+                                <rect key="frame" x="276" y="107.5" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KB3-Js-69n">
+                                <rect key="frame" x="203" y="66" width="195" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="regex to notify, @{screen_name} in default" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2BY-14-jkM">
+                                <rect key="frame" x="133" y="161" width="334" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KB3-Js-69n" secondAttribute="centerX" id="1iV-aU-6bM"/>
+                            <constraint firstItem="ORq-zA-6Mx" firstAttribute="top" secondItem="ez2-Tk-1Uz" secondAttribute="bottom" constant="52" id="7Sy-g9-Kiv"/>
+                            <constraint firstItem="tAd-Xy-aMJ" firstAttribute="top" secondItem="aLm-b1-2es" secondAttribute="bottom" id="IYE-tx-PqC"/>
+                            <constraint firstItem="KB3-Js-69n" firstAttribute="leading" secondItem="5gI-oS-e0Y" secondAttribute="leadingMargin" id="L6U-Ia-3oJ"/>
+                            <constraint firstItem="aLm-b1-2es" firstAttribute="leading" secondItem="5gI-oS-e0Y" secondAttribute="leadingMargin" id="N1w-yN-Y7U"/>
+                            <constraint firstItem="KB3-Js-69n" firstAttribute="top" secondItem="ez2-Tk-1Uz" secondAttribute="bottom" constant="52" id="T8o-gZ-sgl"/>
+                            <constraint firstAttribute="centerX" secondItem="ORq-zA-6Mx" secondAttribute="centerX" id="e85-od-eBl"/>
+                            <constraint firstItem="KB3-Js-69n" firstAttribute="top" secondItem="ez2-Tk-1Uz" secondAttribute="bottom" constant="46" id="fjn-HH-vFX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aLm-b1-2es" secondAttribute="trailing" id="jeT-Gf-aut"/>
+                            <constraint firstAttribute="centerX" secondItem="2BY-14-jkM" secondAttribute="centerX" id="nSf-Z2-scZ"/>
+                            <constraint firstItem="ORq-zA-6Mx" firstAttribute="top" secondItem="KB3-Js-69n" secondAttribute="bottom" constant="21" id="nzo-9e-UZk"/>
+                            <constraint firstItem="ORq-zA-6Mx" firstAttribute="leading" secondItem="KB3-Js-69n" secondAttribute="trailing" constant="10" id="tMX-dO-63C"/>
+                            <constraint firstItem="2BY-14-jkM" firstAttribute="top" secondItem="ORq-zA-6Mx" secondAttribute="bottom" constant="21" id="vhN-Xh-yX5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L6U-Ia-3oJ"/>
+                                <exclude reference="T8o-gZ-sgl"/>
+                                <exclude reference="7Sy-g9-Kiv"/>
+                                <exclude reference="tMX-dO-63C"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="06V-tm-QOi" id="ChP-gw-ZMP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxR-fx-Zeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="399"/>
         </scene>
     </scenes>
 </document>

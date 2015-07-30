@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C7080031B690D47003F15AF /* EntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7080021B690D47003F15AF /* EntranceViewController.swift */; };
+		7C7080051B69B063003F15AF /* ConfigsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7080041B69B063003F15AF /* ConfigsViewController.swift */; };
 		7CB6F8DA1B650D6700059589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6F8D91B650D6700059589 /* AppDelegate.swift */; };
 		7CB6F8DD1B650D6700059589 /* chantos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6F8DB1B650D6700059589 /* chantos.xcdatamodeld */; };
 		7CB6F8DF1B650D6700059589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6F8DE1B650D6700059589 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		7C7080021B690D47003F15AF /* EntranceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntranceViewController.swift; sourceTree = "<group>"; };
+		7C7080041B69B063003F15AF /* ConfigsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigsViewController.swift; sourceTree = "<group>"; };
 		7CB6F8D41B650D6700059589 /* chantos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chantos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB6F8D81B650D6700059589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB6F8D91B650D6700059589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				7CB6F8D91B650D6700059589 /* AppDelegate.swift */,
 				7CB6F8DE1B650D6700059589 /* ViewController.swift */,
 				7CB6F8E01B650D6700059589 /* Main.storyboard */,
+				7C7080041B69B063003F15AF /* ConfigsViewController.swift */,
 				7CC525221B65130800E22FED /* MainChatViewController.swift */,
 				7CB6F8E31B650D6700059589 /* Images.xcassets */,
 				7CB6F8E51B650D6700059589 /* LaunchScreen.xib */,
@@ -223,6 +226,7 @@
 			files = (
 				7CB6F8DF1B650D6700059589 /* ViewController.swift in Sources */,
 				7CB6F8DD1B650D6700059589 /* chantos.xcdatamodeld in Sources */,
+				7C7080051B69B063003F15AF /* ConfigsViewController.swift in Sources */,
 				7CB6F8DA1B650D6700059589 /* AppDelegate.swift in Sources */,
 				7CC525231B65130800E22FED /* MainChatViewController.swift in Sources */,
 				7C7080031B690D47003F15AF /* EntranceViewController.swift in Sources */,
