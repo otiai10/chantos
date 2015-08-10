@@ -15,6 +15,7 @@ class MainChatViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var configsBtn: UIBarButtonItem!
     
     var serverURL: String!
+    var serverHost: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class MainChatViewController: UIViewController, UIWebViewDelegate {
 
         // Do any additional setup after loading the view.
         let url = NSURL(string: self.serverURL)
+        self.serverHost = url!.host
         let req = NSURLRequest(URL: url!)
         self.mainChatWebView.loadRequest(req)
 
@@ -39,6 +41,23 @@ class MainChatViewController: UIViewController, UIWebViewDelegate {
     
     func webViewDidFinishLoad(webView: UIWebView) {
         NSLog(self.mainChatWebView.stringByEvaluatingJavaScriptFromString("location.pathname")!)
+    }
+
+    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        let host: String! = request.URL!.host
+        if host == nil {
+            return true
+        }
+        NSLog(host)
+        switch host {
+        case self.serverHost:
+            return true
+        case "api.twitter.com","syndication.twitter.com","w.soundcloud.com","platform.twitter.com":
+            return true
+        default:
+            UIApplication.sharedApplication().openURL(request.URL!)
+            return false
+        }
     }
 
     @IBAction func TouchExitBtn(sender: AnyObject) {
