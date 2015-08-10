@@ -11,12 +11,12 @@ import UIKit
 class MainChatViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var mainChatWebView: UIWebView!
-    @IBOutlet weak var exitBtn: UIBarButtonItem!
-    @IBOutlet weak var configsBtn: UIBarButtonItem!
     
     var serverURL: String!
     var serverHost: String!
     
+    @IBOutlet weak var mainNavBar: UINavigationBar!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,11 +27,6 @@ class MainChatViewController: UIViewController, UIWebViewDelegate {
         self.serverHost = url!.host
         let req = NSURLRequest(URL: url!)
         self.mainChatWebView.loadRequest(req)
-
-        self.configsBtn.title = NSString(string: "\u{2699}") as String
-        if let font = UIFont(name: "Helvetica", size: 18.0) {
-            self.configsBtn.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
-        }
     }
 
     override func didReceiveMemoryWarning() {

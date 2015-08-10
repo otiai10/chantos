@@ -24,9 +24,13 @@ class EntranceViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let input = self.serverURLInput.text
+        var input = self.serverURLInput.text
         
         // TODO: validate input
+        // debug
+        if input == "" {
+            input = "http://localhost:14000"
+        }
         
         let nextVC = segue.destinationViewController as! MainChatViewController
    
